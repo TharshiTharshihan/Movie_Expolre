@@ -18,7 +18,7 @@ function MovieDetail() {
   const navigate = useNavigate();
   const [movie, setMovie] = useState(null);
   const [trailerKey, setTrailerKey] = useState("");
-  const theme = useTheme(); // Access the current theme
+  const theme = useTheme();
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
@@ -55,8 +55,8 @@ function MovieDetail() {
         maxWidth="lg"
         sx={{
           mt: 4,
-          backgroundColor: theme.palette.background.default, // Set background color for the container
-          color: theme.palette.text.primary, // Set text color to ensure contrast in dark mode
+          backgroundColor: theme.palette.background.default,
+          color: theme.palette.text.primary,
           padding: theme.spacing(2),
           borderRadius: "10px",
         }}
@@ -89,7 +89,7 @@ function MovieDetail() {
           elevation={3}
           sx={{
             p: 2,
-            backgroundColor: theme.palette.background.paper, // Set background color for Paper in dark mode
+            backgroundColor: theme.palette.background.paper,
           }}
         >
           <Box display="flex" gap={4} flexWrap="wrap">
@@ -160,7 +160,7 @@ function MovieDetail() {
             <Box
               sx={{
                 position: "relative",
-                paddingBottom: "56.25%", // 16:9 ratio
+                paddingBottom: "56.25%",
                 height: 0,
                 overflow: "hidden",
                 borderRadius: "10px",

@@ -23,7 +23,6 @@ export default function NavBar() {
   const { darkMode, toggleDarkMode } = useTheme();
 
   React.useEffect(() => {
-    // Check if user is logged in from localStorage
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
       setUserData(JSON.parse(storedUser));

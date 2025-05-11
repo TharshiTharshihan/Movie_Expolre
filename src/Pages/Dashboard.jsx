@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import MovieCard from "../components/MovieCard";
-import { useTheme } from "@mui/material/styles"; // Import the useTheme hook
+import { useTheme } from "@mui/material/styles";
 
 const API_KEY = "5c4aeb41cd07721a6fd30dc422ef4f3b";
 
@@ -19,9 +19,9 @@ function Dashboard() {
   const [infiniteScrollEnabled, setInfiniteScrollEnabled] = useState(false);
 
   const observer = useRef();
-  const navigate = useNavigate(); // Add navigate
+  const navigate = useNavigate();
 
-  const theme = useTheme(); // Access the current theme
+  const theme = useTheme();
 
   const lastMovieElementRef = useCallback(
     (node) => {
@@ -39,7 +39,6 @@ function Dashboard() {
 
   useEffect(() => {
     fetchMovies(page);
-    // eslint-disable-next-line
   }, [page]);
 
   const fetchMovies = async (pageToFetch) => {
@@ -96,8 +95,8 @@ function Dashboard() {
 
       <Paper
         sx={{
-          backgroundColor: theme.palette.background.default, // Adjust background color based on the theme
-          minHeight: "100vh", // Make sure the background covers the full height of the page
+          backgroundColor: theme.palette.background.default,
+          minHeight: "100vh",
           padding: theme.spacing(3),
         }}
       >

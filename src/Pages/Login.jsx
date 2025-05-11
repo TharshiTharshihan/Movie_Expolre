@@ -12,7 +12,6 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Since you don't need backend logic, just simulate a successful login
     console.log("Login attempted with:", {
       username,
       email,
@@ -20,7 +19,6 @@ function Login() {
       rememberMe,
     });
 
-    // Store user info in localStorage so NavBar can use it
     localStorage.setItem(
       "user",
       JSON.stringify({
@@ -30,7 +28,6 @@ function Login() {
       })
     );
 
-    // Navigate to home or dashboard page after "login"
     navigate("/dashboard");
   };
 

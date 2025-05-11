@@ -24,21 +24,20 @@ function Home() {
         >
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2">
-              {/* TEXT SECTION */}
               <div className="order-2 lg:order-1">
                 <p
                   className={`text-base font-semibold tracking-wider ${
                     darkMode ? "text-blue-400" : "text-blue-900"
                   } uppercase`}
                 >
-                  Bring home a best friend.
+                  Bring home a best Experience.
                 </p>
                 <h1
                   className={`mt-4 text-4xl font-bold ${
                     darkMode ? "text-red-400" : "text-red-800"
                   } lg:mt-8 sm:text-6xl xl:text-7xl`}
                 >
-                  Rescue. Love. Repeat.
+                  Commedy. Love. Horror.
                 </h1>
                 <p
                   className={`mt-4 text-base ${
@@ -48,7 +47,6 @@ function Home() {
                   Take your happiness via us.
                 </p>
 
-                {/* MOBILE BUTTON */}
                 <div className="mt-6 lg:hidden">
                   <a
                     href="/login"
@@ -92,16 +90,14 @@ function Home() {
                 </div>
               </div>
 
-              {/* IMAGE SECTION */}
               <div className="order-1 lg:order-2 flex justify-center">
                 <img
                   className="max-w-full sm:max-w-lg md:max-w-xl object-contain max-h-[300px] sm:max-h-[350px] md:max-h-[400px] lg:max-h-[450px] rounded-lg shadow-md"
-                  src="/home.jpg" // Place your image in the public folder as public/home.jpg
+                  src="/home.jpg"
                   alt="Happy pet with owner"
                 />
               </div>
 
-              {/* DESKTOP BUTTON */}
               <div className="hidden lg:flex order-3">
                 <a
                   href="/login"

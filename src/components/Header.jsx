@@ -83,7 +83,6 @@ function Header() {
           </Typography>
 
           <Box sx={{ flexGrow: 1 }} />
-          {/* Dark Mode Toggle for Desktop */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
               size="large"
@@ -95,7 +94,6 @@ function Header() {
             </IconButton>
           </Box>
 
-          {/* More Icon for Mobile */}
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
